@@ -1,14 +1,22 @@
 {
-  "name": "Omar Osama — Graphic Designer",
+  "name": "Omar Osama \u2014 Digital Creator",
   "short_name": "Omar Osama",
+  "description": "Digital Creator \u2022 Web & Digital Experiences",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#080808",
-  "theme_color": "#080808",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "icons": [
-    { "src": "/assets/favicon-16.png", "sizes": "16x16", "type": "image/png" },
-    { "src": "/assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "/assets/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
