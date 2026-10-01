@@ -1,79 +1,801 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Omar Osama — Digital Creator | Web & Digital Experiences</title>
-<meta name="description" content="Omar Osama is a student and digital creator in Cairo, Egypt, working across websites, brand identity, social media content, product photography and student digital projects.">
-<link rel="canonical" href="https://omar-osama-ali.github.io/">
-<link rel="alternate" hreflang="en" href="https://omar-osama-ali.github.io/"><link rel="alternate" hreflang="ar" href="https://omar-osama-ali.github.io/ar/"><link rel="alternate" hreflang="x-default" href="https://omar-osama-ali.github.io/">
-<meta name="theme-color" content="#FFFFFF">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta property="og:type" content="website"><meta property="og:title" content="Omar Osama — Digital Creator | Web & Digital Experiences"><meta property="og:description" content="Omar Osama is a student and digital creator in Cairo, Egypt, working across websites, brand identity, social media content, product photography and student digital projects."><meta property="og:url" content="https://omar-osama-ali.github.io/"><meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://omar-osama-ali.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Omar Osama", "alternateName": "عمر أسامة", "jobTitle": "Digital Creator", "url": "https://omar-osama-ali.github.io/", "email": "mailto:omar.osama2011@yahoo.com", "address": {"@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG"}, "sameAs": ["https://www.linkedin.com/in/omar-osama-476351339"]}</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Osama | Digital Creator & Web Experiences</title>
+    <meta name="description" content="Portfolio of Omar Osama, a digital creator based in Cairo, Egypt, specializing in web development, digital experiences, presentations, and visual content.">
+    <link rel="canonical" href="https://omar-osama-ali.github.io/">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Omar Osama | Digital Creator & Web Experiences">
+    <meta property="og:description" content="Portfolio of Omar Osama, a digital creator based in Cairo, Egypt, specializing in web development, digital experiences, presentations, and visual content.">
+    <meta property="og:url" content="https://omar-osama-ali.github.io/">
+    <meta property="og:image" content="https://omar-osama-ali.github.io/og-image.png">
+    <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" hreflang="en" href="https://omar-osama-ali.github.io/">
+    <link rel="alternate" hreflang="ar" href="https://omar-osama-ali.github.io/ar/">
+    <link rel="alternate" hreflang="x-default" href="https://omar-osama-ali.github.io/">
+    
+    <!-- Google Fonts: Bricolage Grotesque + Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Figtree', 'system-ui', 'sans-serif'],
+                        display: ['Bricolage Grotesque', 'Figtree', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#C4A45C',
+                            light: '#FFFFFF',
+                            lightAlt: '#F7F7F5',
+                            lightAlt2: '#F2F2F0',
+                            dark: '#111111',
+                            darkAlt: '#222222',
+                        }
+                    },
+                    boxShadow: {
+                        'premium': '0 4px 20px -4px rgba(0,0,0,0.05)',
+                        'premium-hover': '0 10px 30px -4px rgba(196,164,92,0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Animations & Refinements -->
+    <style>
+        h1, h2, h3, h4, h5 { font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; }
+        body {
+            background-color: #FFFFFF;
+            color: #111111;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        ::selection {
+            background-color: #C4A45C;
+            color: #FFFFFF;
+        }
+
+        /* Scroll Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in-up.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered delays for grid items */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-content.open {
+            max-height: 500px; /* Arbitrary large number to fit content */
+            opacity: 1;
+        }
+    </style>
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<nav class="nav" aria-label="Main"><div class="wrap navin">
-<a class="logo" href="#home" aria-label="OMAR OSAMA"><img src="assets/mark.png" width="26" height="34" alt=""><span>OMAR OSAMA</span></a>
-<div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#students">Students</a><a href="#projects">Work</a><a href="#web">Web</a><a href="#skills">Skills</a><a href="#faq">FAQ</a></div>
-<div class="navr"><a class="lang" href="ar/index.html" hreflang="ar" lang="ar">العربية</a><a class="btn dark sm hide-s" href="#contact">Contact Me</a><button class="burger" id="burger" aria-expanded="false" aria-controls="mm" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div>
-<div class="mm" id="mm" hidden><div class="wrap"><a class="ml" href="#home">Home</a><a class="ml" href="#about">About</a><a class="ml" href="#services">Services</a><a class="ml" href="#students">Students</a><a class="ml" href="#projects">Work</a><a class="ml" href="#web">Web</a><a class="ml" href="#skills">Skills</a><a class="ml" href="#faq">FAQ</a><a class="btn dark ml" href="#contact">Contact Me</a></div></div></nav>
-<main id="main">
-<header class="hero" id="home"><div class="blob" aria-hidden="true"></div><div class="wrap"><div class="hin fade">
-<p class="pill"><span></span>Based in Cairo, Egypt</p><h1>OMAR OSAMA</h1><h2 class="role">Digital Creator • Web & Digital Experiences</h2><p class="lead">A student and digital creator based in Cairo, working across websites, digital experiences, visual content, presentations, and creative projects.</p>
-<div class="row"><a class="btn dark" href="#projects">View My Work</a><a class="btn line" href="#services">Explore Services</a></div>
-<dl class="facts"><div><dt>Based in</dt><dd>Cairo, Egypt</dd></div><div><dt>Focus</dt><dd>Web & Digital Experiences</dd></div><div><dt>Languages</dt><dd>Arabic / English</dd></div><div><dt>Available for</dt><dd>Digital & creative projects</dd></div></dl></div></div></header>
-<section class="sec alt" id="about"><div class="wrap two"><div class="fade"><h2>Turning Ideas into Clear Digital Work</h2><div class="bar"></div><p class="body">I’m Omar, a digital creator in Cairo. My work spans brand identity, logo design, social media content, product photography, web design and front-end development. I don’t focus on a single medium; I look at the complete digital experience.</p><p class="body">Whether it’s a responsive website built from scratch, a presentation organized with a clear structure, or a coherent brand identity, my goal is clean, useful results that communicate well.</p></div>
-<div class="fade d1 panel"><h3>What I care about</h3><p class="body">Digital work should communicate clearly, not just decorate. Every layout, logo or page starts with one question: will the person looking at it understand it quickly?</p><p class="muted">Arabic: native. English: professional working proficiency.</p><img class="ghost" src="assets/mark.png" width="96" height="125" alt=""></div></div></section>
-<section class="sec" id="services"><div class="wrap"><div class="head fade"><span class="lbl">What I Do</span><h2>Expertise & Services</h2></div><div class="grid g3">
-<article class="card fade d0"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div><div class="num">01</div><h3>Websites & Web Development</h3><p>Website design and front-end development with HTML, CSS and JavaScript, including responsive layouts.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-<article class="card fade d1"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></div><div class="num">02</div><h3>Brand Identity & Logo Design</h3><p>Visual identities, logos, brand direction, typography, colors and supporting brand elements.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-<article class="card fade d2"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><div class="num">03</div><h3>Social Media Content</h3><p>Posts, covers, stories and other visual content for digital platforms.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-<article class="card fade d0"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg></div><div class="num">04</div><h3>Product Photography</h3><p>Clean product photography and visual showcases.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-<article class="card fade d1"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8"/></svg></div><div class="num">05</div><h3>Presentation Design</h3><p>PowerPoint and Google Slides presentations with clear structure and professional visual organization.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-<article class="card fade d2"><div class="ibox"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/></svg></div><div class="num">06</div><h3>AI & Creative Tech</h3><p>Generative AI for brainstorming, prompt engineering, image enhancement and creative workflows.</p><a class="tl" href="#contact">Discuss Project <svg class="ic sm arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-</div></div></section>
-<section class="sec alt" id="students"><div class="wrap"><div class="stu fade"><div><span class="tag">Student Support Program</span><h2>Need Help With a Digital Project?</h2><p class="body">I help students turn their ideas into organized, polished digital work. Short, clear help with the digital side of your project.</p><p class="note">This service is for digital production, presentation, organization and creative support. I don’t do graded assignments for students or impersonate anyone, and the ideas and work stay yours.</p><a class="btn dark" href="#contact">Discuss a Project</a></div><ul class="chk"><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>School Presentations</strong><br><small>PowerPoint and Google Slides with a clear structure.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Project Websites</strong><br><small>Responsive websites for school and personal projects.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Student Portfolios</strong><br><small>A site showing your projects, skills and achievements.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Project Visuals</strong><br><small>Posters, covers, diagrams and infographics.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Digital Project Organization</strong><br><small>Turn scattered content into one clear presentation or site.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Personal Digital Presence</strong><br><small>A simple online portfolio or personal website.</small></span></li><li><svg class="ic gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span><strong>Creative AI Support</strong><br><small>Responsible use of generative AI for ideas, visuals and image enhancement.</small></span></li></ul></div></div></section>
-<section class="sec" id="projects"><div class="wrap"><div class="head fade"><span class="lbl">Portfolio</span><h2>Selected Works</h2></div><div class="grid g2">
-<a class="proj fade d0" href="https://web-site11.github.io/NileSip/index%2012234.html" target="_blank" rel="noopener noreferrer"><div class="media"><img src="assets/nilesip-02.webp" alt="NileSip Botanicals — Beverage brand, product photography and website" width="800" height="600" loading="lazy" decoding="async"></div><div class="cap"><div><span class="cat">Branding & Photography</span><h3>NileSip Botanicals</h3><p>Beverage brand, product photography and website</p></div><span class="go"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div></a>
-<a class="proj fade d1" href="assets/neo-gear-brand-guidelines.pdf" target="_blank" rel="noopener noreferrer"><div class="media"><img src="assets/neogear-logo.webp" alt="NEO GEAR — Brand identity and brand guidelines (PDF)" width="800" height="600" loading="lazy" decoding="async"></div><div class="cap"><div><span class="cat">Brand Identity</span><h3>NEO GEAR</h3><p>Brand identity and brand guidelines (PDF)</p></div><span class="go"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div></a>
-<a class="proj fade d0" href="assets/aura-board.webp" target="_blank" rel="noopener noreferrer"><div class="media"><img src="assets/aura-board.webp" alt="Aura Skincare — Logo and brand board for a skincare brand" width="800" height="600" loading="lazy" decoding="async"></div><div class="cap"><div><span class="cat">Branding</span><h3>Aura Skincare</h3><p>Logo and brand board for a skincare brand</p></div><span class="go"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div></a>
-<div class="proj fade d1"><div class="media"><div class="cover" aria-hidden="true"><span>VE</span></div></div><div class="cap"><div><span class="cat">Branding</span><h3>Vortex Energy</h3><p>Brand system, posters, social posts and applications</p></div></div></div>
-<div class="proj fade d0"><div class="media"><div class="cover" aria-hidden="true"><span>VC</span></div></div><div class="cap"><div><span class="cat">Branding</span><h3>Veloce Customs</h3><p>Brand identity project</p></div></div></div>
-<div class="proj fade d1"><div class="media"><div class="cover" aria-hidden="true"><span>SG</span></div></div><div class="cap"><div><span class="cat">Visual Content</span><h3>Samsung Galaxy S21 Ultra</h3><p>Product photography & visuals</p></div></div></div>
-<div class="proj fade d0"><div class="media"><div class="cover" aria-hidden="true"><span>G1</span></div></div><div class="cap"><div><span class="cat">Visual Content</span><h3>Grade 10A Minimal Schedule</h3><p>Desktop wallpapers</p></div></div></div>
-<div class="proj fade d1"><div class="media"><div class="cover" aria-hidden="true"><span>TF</span></div></div><div class="cap"><div><span class="cat">Presentations</span><h3>The Feudal System</h3><p>Medieval Europe academic presentation</p></div></div></div>
-<div class="proj fade d0"><div class="media"><div class="cover" aria-hidden="true"><span>IH</span></div></div><div class="cap"><div><span class="cat">Presentations</span><h3>ICT Hardware Specs</h3><p>Technical briefing layout</p></div></div></div>
-</div><div class="head fade sub"><h3>Product Photography — NileSip Botanicals</h3><p class="muted">Nine images from the NileSip Botanicals sparkling tea range.</p></div><ul class="gal"><li><a href="assets/nilesip-01.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-01.webp" alt="NileSip Botanicals — Royal Karkadeh" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-02.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-02.webp" alt="NileSip Botanicals — Royal Karkadeh — flat lay" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-03.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-03.webp" alt="NileSip Botanicals — Royal Karkadeh — gift boxes" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-04.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-04.webp" alt="NileSip Botanicals — Golden Chamomile Citrus" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-05.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-05.webp" alt="NileSip Botanicals — Golden Chamomile Citrus — stone" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-06.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-06.webp" alt="NileSip Botanicals — Golden Chamomile Citrus — pedestal" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-07.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-07.webp" alt="NileSip Botanicals — Emerald Nile" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-08.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-08.webp" alt="NileSip Botanicals — Emerald Nile — flat lay" width="960" height="536" loading="lazy" decoding="async"></a></li><li><a href="assets/nilesip-09.webp" target="_blank" rel="noopener noreferrer"><img src="assets/nilesip-09.webp" alt="NileSip Botanicals — Sage Green Mint" width="960" height="536" loading="lazy" decoding="async"></a></li></ul></div></section>
-<section class="sec alt line2" id="web"><div class="wrap"><div class="head fade"><span class="lbl">Development</span><h2>Web Projects</h2><p class="muted">Responsive front-end websites, from commercial sites and profiles to web games.</p></div><div class="grid g2">
-<article class="wc fade"><div class="media"><img src="assets/nilesip-04.webp" alt="NileSip Botanicals website product imagery" width="800" height="600" loading="lazy" decoding="async"></div><div class="wb"><h3>NileSip Botanicals</h3><p>A beverage brand website with a hero section, flavors, offers, cart, ingredients story and product showcase.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>E-commerce</span></div><a class="btn line full" href="https://web-site11.github.io/NileSip/index%2012234.html" target="_blank" rel="noopener noreferrer">View Project</a></div></article>
-<article class="wc fade d1"><div class="media"><div class="cover" aria-hidden="true"><span>MS</span></div></div><div class="wb"><h3>Marwan Selim Barbershop</h3><p>A fully responsive commercial website showing barbershop services, pricing and booking information with a modern look.</p><div class="chips"><span>UI/UX</span><span>Responsive Web</span></div></div></article>
-<article class="wc fade d0"><div class="media"><div class="cover" aria-hidden="true"><span>HA</span></div></div><div class="wb"><h3>Hany Al-Ashry Profile</h3><p>Bilingual website for an educator, presenting professional background, academic offerings and contact channels.</p><div class="chips"><span>Bilingual Layout</span><span>Front-End</span></div></div></article>
-<article class="wc fade d1"><div class="media"><div class="cover" aria-hidden="true"><span>F</span></div></div><div class="wb"><h3>FLAGVERSE</h3><p>An interactive web game for guessing country flags, with clean state management and immediate visual feedback.</p><div class="chips"><span>Web App</span><span>Logic & Interactivity</span></div></div></article>
-<article class="wc fade d0"><div class="media"><div class="cover" aria-hidden="true"><span>LT</span></div></div><div class="wb"><h3>Local Two-Player Chess</h3><p>UI/UX layout and wireframes for a minimal local multiplayer chess experience.</p><div class="chips"><span>UI/UX Design</span><span>Wireframing</span></div></div></article>
-</div></div></section>
-<section class="sec" id="skills"><div class="wrap"><div class="head fade"><span class="lbl">Skills</span><h2>What I Work With</h2></div><div class="grid g3"><div class="card fade"><h3>Web & Digital</h3><div class="chips"><span>Website Design</span><span>Front-End Development</span><span>Responsive Websites</span><span>Basic UI/UX</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div><div class="card fade"><h3>Creative</h3><div class="chips"><span>Brand Identity</span><span>Logo Design</span><span>Typography</span><span>Layout</span><span>Digital Illustration</span><span>Social Media Content</span></div></div><div class="card fade"><h3>Photography</h3><div class="chips"><span>Product Photography</span><span>Product Presentation</span><span>Visual Composition</span></div></div><div class="card fade"><h3>AI & Creative Technology</h3><div class="chips"><span>Generative AI</span><span>Prompt Engineering</span><span>Image Enhancement</span><span>Creative Automation</span></div></div><div class="card fade"><h3>Tools</h3><div class="chips"><span>Photoshop</span><span>Canva</span><span>PowerPoint</span><span>Google Slides</span></div></div></div></div></section>
-<section class="sec alt" id="faq"><div class="wrap narrow"><div class="head fade"><span class="lbl">Clarifications</span><h2>Frequently Asked Questions</h2></div><div class="faq"><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a0" id="q0"><span>What services do you offer?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a0" role="region" aria-labelledby="q0" hidden><p>Brand identity and logos, social media content, product photography, websites, presentations, and digital project help for students.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a1" id="q1"><span>How do I start a project?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a1" role="region" aria-labelledby="q1" hidden><p>Send me an email or a WhatsApp message with a short description of what you need. We’ll go from there.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a2" id="q2"><span>What information do you need?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a2" role="region" aria-labelledby="q2" hidden><p>What the project is, who it’s for, any content you already have (text, logos, photos), and any deadline.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a3" id="q3"><span>Can you create a complete brand identity?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a3" role="region" aria-labelledby="q3" hidden><p>Yes. Aura and NEO GEAR in the portfolio are examples: logo, colors, typography and brand applications.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a4" id="q4"><span>Can you create social media content?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a4" role="region" aria-labelledby="q4" hidden><p>Yes — posts, covers, stories and other visual content.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a5" id="q5"><span>Do you offer product photography?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a5" role="region" aria-labelledby="q5" hidden><p>Yes. The NileSip Botanicals product photography shows the style.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a6" id="q6"><span>Do you build websites?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a6" role="region" aria-labelledby="q6" hidden><p>Yes, responsive websites built with HTML, CSS and JavaScript, for individuals, students and small projects.</p></div></div><div class="fi"><h3><button class="ft" aria-expanded="false" aria-controls="a7" id="q7"><span>How long does a project take?</span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="fa" id="a7" role="region" aria-labelledby="q7" hidden><p>It depends on the size of the project. Tell me what you need and your deadline, and I’ll give you an honest estimate.</p></div></div></div></div></section>
-<section class="sec dark" id="contact"><div class="wrap two"><div class="fade"><h2 class="big">Let’s Work<br><span class="goldt">Together.</span></h2><p class="lead inv">Have a project in mind? Reach out through any channel below.</p>
-<ul class="cl"><li><a href="mailto:omar.osama2011@yahoo.com"><span class="ibox inv"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small><b>omar.osama2011@yahoo.com</b></span></a></li>
-<li><a href="https://wa.me/201200140223" target="_blank" rel="noopener noreferrer"><span class="ibox inv"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/></svg></span><span><small>WhatsApp</small><b dir="ltr">+20 12 00140223</b></span></a></li>
-<li><a href="https://www.linkedin.com/in/omar-osama-476351339" target="_blank" rel="noopener noreferrer"><span class="ibox inv"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 8v.01M12 17v-6M12 13a3 3 0 0 1 6 0v4"/></svg></span><span><small>LinkedIn</small><b dir="ltr">omar-osama-476351339</b></span></a></li>
-<li><span class="ibox inv"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5zM6 11.5V16c3 2.5 9 2.5 12 0v-4.5"/></svg></span><span><small>WeChat</small><b dir="ltr">OmarOsama2011</b></span></li></ul></div>
-<div class="fade d1 fbox"><h3>Start a Project</h3><form id="cf" data-email="omar.osama2011@yahoo.com" data-subj="Project inquiry from" novalidate>
-<div class="f2"><div><label for="fn">Name</label><input id="fn" name="n" type="text" autocomplete="name" required></div><div><label for="fe">Your email</label><input id="fe" name="e" type="email" autocomplete="email" dir="ltr"></div></div>
-<label for="fs">Service interest</label><select id="fs"><option>Websites & Web Development</option><option>Brand Identity & Logo Design</option><option>Social Media Content</option><option>Product Photography</option><option>Presentation Design</option><option>Student Project Help</option><option>Other</option></select>
-<label for="fm">Message</label><textarea id="fm" rows="4" placeholder="Tell me about your project…" required></textarea>
-<button class="btn gold full" type="submit">Open Email Draft</button><p class="fnote">This opens your email app with your message ready to send. Nothing is stored on this website.</p></form></div></div></section>
-</main>
-<footer class="foot"><div class="wrap"><div class="frow"><div><h4>OMAR OSAMA</h4><p>Digital Creator • Web & Digital Experiences<br>Cairo, Egypt</p></div>
-<div class="soc"><a href="mailto:omar.osama2011@yahoo.com" aria-label="Email"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a><a href="https://wa.me/201200140223" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/></svg></a><a href="https://www.linkedin.com/in/omar-osama-476351339" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 8v.01M12 17v-6M12 13a3 3 0 0 1 6 0v4"/></svg></a></div></div>
-<div class="frow small"><p>© <span id="yr">2026</span> OMAR OSAMA. All rights reserved.</p><div class="fl"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a><a href="refund.html">Refunds</a></div></div></div></footer>
-<script src="script.js" defer></script>
-</body></html>
+<body class="font-sans antialiased bg-brand-light text-brand-dark overflow-x-hidden">
+
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-3 group">
+                <!-- User requested Logo Image -->
+                <img src="assets/mark.png" alt="Omar Osama Logo" class="h-8 w-auto group-hover:opacity-80 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="font-bold text-lg tracking-tight hidden">OMAR OSAMA</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-darkAlt">
+                <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
+                <a href="#projects" class="hover:text-brand-gold transition-colors">Projects</a>
+                <a href="#web" class="hover:text-brand-gold transition-colors">Web</a>
+                <a href="#students" class="hover:text-brand-gold transition-colors">Students</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+                <a href="ar/index.html" hreflang="ar" lang="ar" class="hover:text-brand-gold transition-colors">العربية</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 bg-brand-dark text-white text-sm font-medium rounded-full hover:bg-brand-gold transition-colors">
+                    Contact Me
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 absolute w-full left-0 shadow-lg">
+            <div class="flex flex-col px-6 py-4 gap-4 text-base font-medium">
+                <a href="#home" class="mobile-link text-brand-dark hover:text-brand-gold">Home</a>
+                <a href="#about" class="mobile-link text-brand-dark hover:text-brand-gold">About</a>
+                <a href="#services" class="mobile-link text-brand-dark hover:text-brand-gold">Services</a>
+                <a href="#projects" class="mobile-link text-brand-dark hover:text-brand-gold">Projects</a>
+                <a href="#web" class="mobile-link text-brand-dark hover:text-brand-gold">Web Projects</a>
+                <a href="#students" class="mobile-link text-brand-dark hover:text-brand-gold">Student Support</a>
+                <a href="#faq" class="mobile-link text-brand-dark hover:text-brand-gold">FAQ</a>
+                <a href="ar/index.html" hreflang="ar" lang="ar" class="mobile-link text-brand-dark hover:text-brand-gold">العربية</a>
+                <a href="#contact" class="mobile-link text-brand-gold mt-2">Let's Work Together →</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center min-h-[90vh] bg-brand-light overflow-hidden">
+        <!-- Subtle background accent -->
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-lightAlt2 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/3 -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full z-10">
+            <div class="max-w-3xl fade-in-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-lightAlt border border-gray-200 text-xs font-semibold tracking-wide text-brand-gold mb-6 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+                    Based in Cairo, Egypt
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-brand-dark mb-6 leading-[1.1]">
+                    OMAR OSAMA
+                </h1>
+                <h2 class="text-xl lg:text-3xl font-medium text-brand-darkAlt mb-6">
+                    Digital Creator <span class="text-gray-300 mx-2">•</span> Web & Digital Experiences
+                </h2>
+                <p class="text-lg lg:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
+                    I create websites, digital experiences, presentations, visual content, and creative solutions that turn ideas into polished digital work.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="inline-flex items-center justify-center px-8 py-3.5 bg-brand-dark text-white text-base font-medium rounded-full hover:bg-brand-gold hover:shadow-premium-hover transition-all">
+                        View My Work
+                    </a>
+                    <a href="#services" class="inline-flex items-center justify-center px-8 py-3.5 bg-transparent border border-gray-200 text-brand-dark text-base font-medium rounded-full hover:border-brand-gold hover:text-brand-gold transition-all">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 bg-brand-lightAlt">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-up">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Turning Concepts into Polished Realities</h2>
+                    <div class="w-16 h-1 bg-brand-gold mb-8 rounded-full"></div>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        As a young digital creator, my work spans across front-end web development, visual identity, UI/UX design, and AI-assisted creative workflows. I don't just focus on a single medium; I look at the complete digital experience.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Whether it's building a responsive website from scratch, organizing complex research into a high-end academic presentation, or establishing a coherent brand identity, my goal is to deliver clean, functional, and premium results that communicate your message effectively.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-gray-200">
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-2">Core Focus</h4>
+                            <p class="text-gray-500 text-sm">Web Development, UI/UX, Visual Content</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-2">Location</h4>
+                            <p class="text-gray-500 text-sm">New Cairo City, Egypt (Available Globally)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative h-[500px] rounded-3xl bg-brand-lightAlt2 border border-gray-200 overflow-hidden fade-in-up delay-100 flex items-center justify-center">
+                    <!-- Abstract placeholder for professional visual balance -->
+                    <div class="absolute inset-0 bg-[url('https://placehold.co/800x1000/F2F2F0/C4A45C?text=OO')] bg-cover bg-center opacity-50 mix-blend-multiply"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-lightAlt/80 to-transparent"></div>
+                    <div class="relative z-10 text-center">
+                        <img src="assets/mark.png" alt="Omar Osama Graphic Element" class="w-32 h-auto mx-auto opacity-20" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+                <span class="text-brand-gold font-semibold tracking-wider text-sm uppercase mb-2 block">What I Do</span>
+                <h2 class="text-3xl lg:text-4xl font-bold">Expertise & Services</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-browser"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">01</div>
+                    <h3 class="text-xl font-bold mb-3">Website Development</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Website creation, front-end implementation (HTML, CSS, JS), responsive layouts, and complete end-to-end website experiences.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up delay-100">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-device-mobile"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">02</div>
+                    <h3 class="text-xl font-bold mb-3">Digital Experiences</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Interactive, polished, and intuitive digital experiences designed precisely around the user's goals and modern web standards.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up delay-200">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-presentation-chart"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">03</div>
+                    <h3 class="text-xl font-bold mb-3">Presentation Design</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Professional PowerPoint and Google Slides presentations tailored for academic, corporate, and specialized project-based work.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-image"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">04</div>
+                    <h3 class="text-xl font-bold mb-3">Visual Content</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Creation of compelling digital posters, social media content, custom covers, and other versatile visual assets for digital platforms.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up delay-100">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-swatches"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">05</div>
+                    <h3 class="text-xl font-bold mb-3">Brand Identity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Comprehensive logo systems, cohesive visual identities, typography selection, layouts, and complete brand asset generation.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-brand-light border border-gray-100 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 fade-in-up delay-200">
+                    <div class="w-12 h-12 bg-brand-lightAlt2 rounded-xl flex items-center justify-center text-brand-gold text-2xl mb-6">
+                        <i class="ph ph-robot"></i>
+                    </div>
+                    <div class="text-xs font-bold text-gray-400 mb-2">06</div>
+                    <h3 class="text-xl font-bold mb-3">AI & Creative Tech</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Leveraging generative AI workflows, advanced prompt engineering, image enhancement, and AI-assisted creative production.</p>
+                    <a href="#contact" class="text-brand-dark font-semibold text-sm inline-flex items-center gap-2 hover:text-brand-gold transition-colors">
+                        Discuss Project <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="students" class="py-24 bg-brand-lightAlt relative overflow-hidden">
+        <div class="absolute -left-40 top-20 w-80 h-80 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="bg-white border border-gray-200 rounded-3xl p-8 lg:p-16 shadow-premium flex flex-col lg:flex-row gap-12 items-center fade-in-up">
+                
+                <div class="flex-1">
+                    <div class="inline-block px-4 py-1.5 bg-gray-100 text-gray-700 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
+                        Student Support Program
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Need Help With a School Project?</h2>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        I help students turn their project ideas into polished digital deliverables. Whether it's organizing research into an engaging presentation or building a custom project landing page, I provide the technical and design support needed to stand out.
+                    </p>
+                    <p class="text-sm text-gray-500 italic mb-8 border-l-2 border-brand-gold pl-4">
+                        Note: This service focuses on presentation, design, and technical implementation. I do not provide academic cheating or complete homework that violates school rules.
+                    </p>
+                    
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-check-circle text-brand-gold text-xl mt-0.5"></i>
+                            <span class="text-brand-dark font-medium">PowerPoint & Google Slides</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-check-circle text-brand-gold text-xl mt-0.5"></i>
+                            <span class="text-brand-dark font-medium">Project Websites & Landing Pages</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-check-circle text-brand-gold text-xl mt-0.5"></i>
+                            <span class="text-brand-dark font-medium">Digital Posters & Visuals</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-check-circle text-brand-gold text-xl mt-0.5"></i>
+                            <span class="text-brand-dark font-medium">Research Visual Organization</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-brand-dark text-white text-base font-medium rounded-full hover:bg-brand-gold transition-colors">
+                        Discuss a Project
+                    </a>
+                </div>
+                
+                <div class="w-full lg:w-[45%] flex justify-center">
+                    <div class="w-full max-w-sm aspect-square bg-brand-lightAlt2 rounded-full flex items-center justify-center border-8 border-white shadow-xl relative">
+                        <i class="ph ph-student text-7xl text-gray-300 absolute"></i>
+                        <!-- Decorative elements -->
+                        <div class="absolute top-10 right-10 w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center text-brand-gold text-xl animate-bounce" style="animation-duration: 3s;"><i class="ph ph-file-code"></i></div>
+                        <div class="absolute bottom-16 left-4 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-gold text-2xl animate-bounce" style="animation-duration: 4s; animation-delay: 1s;"><i class="ph ph-presentation"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+                <span class="text-brand-gold font-semibold tracking-wider text-sm uppercase mb-2 block">Portfolio</span>
+                <h2 class="text-3xl lg:text-4xl font-bold">Selected Works</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <a href="https://web-site11.github.io/NileSip/index%2012234.html" target="_blank" rel="noopener noreferrer" class="group block fade-in-up">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=NileSip+Botanicals" alt="NileSip Botanicals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Branding</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">NileSip Botanicals</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <div class="group fade-in-up delay-100">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Veloce+Customs" alt="Veloce Customs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Branding</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">Veloce Customs</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group fade-in-up">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Samsung+S21+Photography" alt="Samsung Galaxy S21 Ultra Product Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Visual Content</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">Samsung Galaxy S21 Ultra</h3>
+                            <p class="text-sm text-gray-500">Product Photography & Visuals</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group fade-in-up delay-100">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Grade+10A+Wallpapers" alt="Grade 10A Minimal Schedule Wallpapers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Visual Content</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">Grade 10A Minimal Schedule</h3>
+                            <p class="text-sm text-gray-500">Desktop Wallpapers</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="group fade-in-up">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Feudal+System+Presentation" alt="The Feudal System & Medieval Europe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Presentations</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">The Feudal System</h3>
+                            <p class="text-sm text-gray-500">Medieval Europe Academic Presentation</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group fade-in-up delay-100">
+                    <div class="relative overflow-hidden rounded-2xl bg-brand-lightAlt2 mb-4 aspect-[4/3]">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=ICT+Hardware+Specs" alt="ICT Hardware Specifications" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider mb-1 block">Presentations</span>
+                            <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-gold transition-colors">ICT Hardware Specs</h3>
+                            <p class="text-sm text-gray-500">Technical Briefing Layout</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web" class="py-24 bg-brand-lightAlt border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 fade-in-up">
+                <div class="max-w-2xl">
+                    <span class="text-brand-gold font-semibold tracking-wider text-sm uppercase mb-2 block">Development</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold">Web Projects</h2>
+                    <p class="text-gray-600 mt-4 text-lg">Interactive, responsive, and tailored front-end website creations spanning commercial sites, profiles, and web games.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Web Project 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-premium flex flex-col h-full fade-in-up">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Marwan+Selim+Barbershop" alt="Marwan Selim Barbershop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Marwan Selim Barbershop</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">A fully responsive commercial website built to showcase barbershop services, pricing, and booking information with a modern aesthetic.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">UI/UX</span>
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Responsive Web</span>
+                        </div>
+                        <button type="button" disabled aria-disabled="true" title="Project link not available yet" class="w-full py-3 border border-gray-200 rounded-xl font-medium text-gray-400 cursor-not-allowed">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Web Project 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-premium flex flex-col h-full fade-in-up delay-100">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Hany+Al-Ashry+Profile" alt="Hany Al-Ashry Profile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Hany Al-Ashry Profile</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Bilingual promotional educator website designed to present professional background, academic offerings, and contact channels effectively.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Bilingual Layout</span>
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Front-End</span>
+                        </div>
+                        <button type="button" disabled aria-disabled="true" title="Project link not available yet" class="w-full py-3 border border-gray-200 rounded-xl font-medium text-gray-400 cursor-not-allowed">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Web Project 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-premium flex flex-col h-full fade-in-up">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=FLAGVERSE" alt="FLAGVERSE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">FLAGVERSE</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">An engaging, interactive web-based country flag guessing game focusing on clean state management and immediate visual feedback.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Web App</span>
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Logic & Interactivity</span>
+                        </div>
+                        <button type="button" disabled aria-disabled="true" title="Project link not available yet" class="w-full py-3 border border-gray-200 rounded-xl font-medium text-gray-400 cursor-not-allowed">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Web Project 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-premium flex flex-col h-full fade-in-up delay-100">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://placehold.co/800x600/F2F2F0/111111?text=Local+Chess" alt="Local Two-Player Chess" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Local Two-Player Chess</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">UI/UX web layout and wireframes for a functional, aesthetically minimal local multiplayer chess experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">UI/UX Design</span>
+                            <span class="px-3 py-1 bg-brand-lightAlt text-xs font-medium rounded-md text-brand-dark">Wireframing</span>
+                        </div>
+                        <button type="button" disabled aria-disabled="true" title="Project link not available yet" class="w-full py-3 border border-gray-200 rounded-xl font-medium text-gray-400 cursor-not-allowed">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-brand-light">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-brand-gold font-semibold tracking-wider text-sm uppercase mb-2 block">Clarifications</span>
+                <h2 class="text-3xl lg:text-4xl font-bold">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4 fade-in-up">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden">
+                    <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-lg text-brand-dark">What services do you offer?</span>
+                        <i class="ph ph-caret-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6 text-gray-600">
+                        <p class="pb-5">I offer a comprehensive range of digital services including Website Development (front-end implementation & responsive layouts), Digital Experiences, Professional Presentation Design, Visual Content creation, Brand Identity systems, and AI-assisted creative workflows.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden">
+                    <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-lg text-brand-dark">Can you build a website from scratch?</span>
+                        <i class="ph ph-caret-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6 text-gray-600">
+                        <p class="pb-5">Yes. I can handle complete front-end web development to build responsive, modern websites from a blank canvas all the way to a polished, final digital product using modern web standards.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden">
+                    <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-lg text-brand-dark">Can you help with student projects?</span>
+                        <i class="ph ph-caret-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6 text-gray-600">
+                        <p class="pb-5">Absolutely. I offer a dedicated support program for students needing help turning their ideas into high-quality digital deliverables, such as project landing pages, presentation designs, and visual research organization. (Please note I only assist with presentation and technical execution, not academic cheating).</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden">
+                    <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors">
+                        <span class="font-bold text-lg text-brand-dark">Can you create a complete digital project from idea to final result?</span>
+                        <i class="ph ph-caret-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6 text-gray-600">
+                        <p class="pb-5">Yes, I specialize in taking raw concepts and executing them across multiple disciplines—whether that means establishing the brand identity first, designing the assets, and finally developing the front-end website to showcase it all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://placehold.co/1000x1000/111111/222222?text=+')] opacity-20 bg-repeat pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="fade-in-up">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-6">Let's Work<br><span class="text-brand-gold">Together.</span></h2>
+                    <p class="text-gray-400 text-lg mb-10 max-w-md">
+                        Ready to start a project or need help turning an idea into a digital reality? Reach out through any of the channels below.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <a href="mailto:omar.osama2011@yahoo.com" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-brand-gold transition-colors">
+                                <i class="ph ph-envelope-simple text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <p class="font-medium group-hover:text-brand-gold transition-colors">omar.osama2011@yahoo.com</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/201200140223" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-brand-gold transition-colors">
+                                <i class="ph ph-whatsapp-logo text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">WhatsApp</p>
+                                <p class="font-medium group-hover:text-brand-gold transition-colors">+20 12 00140223</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 lg:p-10 backdrop-blur-sm fade-in-up delay-100">
+                    <h3 class="text-2xl font-bold mb-8">Start a Project</h3>
+                    <form id="contact-form" class="space-y-5" novalidate>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="space-y-2">
+                                <label for="cf-name" class="text-sm text-gray-400">Name</label>
+                                <input id="cf-name" name="name" autocomplete="name" required type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold transition-colors" placeholder="Your name">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="cf-email" class="text-sm text-gray-400">Email</label>
+                                <input id="cf-email" name="email" autocomplete="email" type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold transition-colors" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="cf-service" class="text-sm text-gray-400">Service Interest</label>
+                            <select id="cf-service" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold transition-colors appearance-none">
+                                <option class="text-black" value="web">Web Development</option>
+                                <option class="text-black" value="design">Presentation Design</option>
+                                <option class="text-black" value="branding">Brand Identity</option>
+                                <option class="text-black" value="student">Student Project Help</option>
+                                <option class="text-black" value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="cf-message" class="text-sm text-gray-400">Message</label>
+                            <textarea id="cf-message" required rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button class="w-full py-4 bg-brand-gold text-white font-bold rounded-xl hover:bg-white hover:text-brand-dark transition-colors mt-4">
+                            Open Email Draft
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-light py-12 border-t border-gray-200 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                <div>
+                    <h4 class="font-bold text-xl tracking-tight text-brand-dark mb-1">OMAR OSAMA</h4>
+                    <p class="text-sm text-gray-500">Digital Creator • Web & Digital Experiences</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/in/omar-osama-476351339" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-brand-dark hover:bg-brand-gold hover:text-white transition-colors">
+                        <i class="ph ph-linkedin-logo text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gray-100 text-sm text-gray-400">
+                <p>&copy; 2026 Omar Osama. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 md:mt-0">
+                    <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
+                    <a href="#projects" class="hover:text-brand-gold transition-colors">Portfolio</a>
+                    <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
+                    <a href="privacy.html" class="hover:text-brand-gold transition-colors">Privacy</a>
+                    <a href="terms.html" class="hover:text-brand-gold transition-colors">Terms</a>
+                    <a href="cookies.html" class="hover:text-brand-gold transition-colors">Cookies</a>
+                    <a href="refund.html" class="hover:text-brand-gold transition-colors">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('ph-x');
+                    icon.classList.add('ph-list');
+                } else {
+                    icon.classList.remove('ph-list');
+                    icon.classList.add('ph-x');
+                }
+            });
+
+            // Close mobile menu on link click
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.querySelector('i').classList.remove('ph-x');
+                    mobileMenuBtn.querySelector('i').classList.add('ph-list');
+                });
+            });
+
+            // FAQ Accordion Toggle
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = toggle.nextElementSibling;
+                    const icon = toggle.querySelector('i');
+                    const isOpen = content.classList.contains('open');
+
+                    // Close all others
+                    document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+                    document.querySelectorAll('.faq-toggle i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+                    if (!isOpen) {
+                        content.classList.add('open');
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+
+            // Scroll Fade-In Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('appear');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script>
+        (function () {
+            var f = document.getElementById('contact-form');
+            if (!f) return;
+            f.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var n = document.getElementById('cf-name'), m = document.getElementById('cf-message');
+                var bad = false;
+                [n, m].forEach(function (x) {
+                    var v = !x.value.trim();
+                    x.setAttribute('aria-invalid', String(v));
+                    x.style.borderColor = v ? '#ff8a80' : '';
+                    if (v && !bad) { x.focus(); bad = true; }
+                });
+                if (bad) return;
+                var em = document.getElementById('cf-email').value.trim();
+                var body = m.value.trim() + '\n\n- ' + n.value.trim() + (em ? '\n' + em : '') + '\n' + document.getElementById('cf-service').selectedOptions[0].text;
+                window.location.href = 'mailto:omar.osama2011@yahoo.com?subject=' + encodeURIComponent('Project inquiry from ' + n.value.trim()) + '&body=' + encodeURIComponent(body);
+            });
+        })();
+    </script>
+</body>
+</html>
