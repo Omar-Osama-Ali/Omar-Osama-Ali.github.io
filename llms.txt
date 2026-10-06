@@ -1,0 +1,25 @@
+# Omar Osama
+
+> Omar Osama is a digital creator in Cairo, Egypt, building websites, brand identities, visual content, presentations and AI-assisted creative work.
+
+Omar Osama is based in Cairo, Egypt. He works across websites and front-end development (HTML, CSS, JavaScript), brand identity and logos, social media content, product photography, presentations and generative AI-assisted creative work. Languages: Arabic and English. Contact: omar.osama2011@yahoo.com, WhatsApp +20 12 00140223.
+
+## Work
+- [NileSip Botanicals website](https://web-site11.github.io/NileSip/index%2012234.html): beverage brand website with flavors, offers, cart and ingredients story, plus brand presentation and product photography.
+- [NEO GEAR brand guidelines (PDF)](https://omar-osama-ali.github.io/assets/neo-gear-brand-guidelines.pdf): identity system for smart sports accessories and gym equipment.
+- [Aura Skincare brand board](https://omar-osama-ali.github.io/assets/aura-board.webp): logo system and brand board for a premium organic skincare brand.
+- [FLAGVERSE](https://omar-osama-ali.github.io/Game/): interactive web game for guessing country flags.
+- [Local Two-Player Chess](https://omar-osama-ali.github.io/Chess/): minimal local multiplayer chess for the browser.
+
+## Pages
+- [Home, services, about and FAQ](https://omar-osama-ali.github.io/): full overview of services and common questions.
+- [Contact](https://omar-osama-ali.github.io/#contact): WhatsApp, email, phone and LinkedIn.
+
+## Profiles
+- [LinkedIn](https://www.linkedin.com/in/omar-osama-476351339)
+
+## Policies
+- [Privacy](https://omar-osama-ali.github.io/privacy.html)
+- [Terms](https://omar-osama-ali.github.io/terms.html)
+- [Cookies](https://omar-osama-ali.github.io/cookies.html)
+- [Refunds](https://omar-osama-ali.github.io/refund.html)
